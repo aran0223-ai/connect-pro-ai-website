@@ -6,17 +6,13 @@
       <p>Last updated: October 24, 2025</p>
 
       <h2>1. Commission Fee</h2>
-      <p>The 15% commission fee charged by Connect Pro AI is <strong>non-refundable</strong>. This fee covers our service of facilitating the business connection.</p>
+      <p>The 15% commission fee is <strong>non-refundable</strong>.</p>
 
       <h2>2. Service Quality</h2>
-      <p>Liability for service quality rests solely with the Provider, not the legal entity, <strong>Aran Jallal</strong>. We act only as an intermediary platform.</p>
+      <p>Liability for service quality rests solely with the Provider, not the legal entity, <strong>Aran Jallal</strong>.</p>
 
-      <h2>3. Dispute Resolution</h2>
-      <p>Any disputes regarding service quality should be addressed directly with the service provider. Our commission fee is independent of the service outcome.</p>
-
-      <h2>4. Contact</h2>
-      <p>For refund-related inquiries:<br>
-      Contact: Liam Smith<br>
+      <h2>3. Contact</h2>
+      <p>For refund inquiries:<br>
       Email: liam@connect-pro-ai.net</p>
     </main>
     <SiteFooter />
@@ -34,5 +30,4 @@ import SiteFooter from '../components/SiteFooter.vue'
   max-width: 800px;
   margin: 0 auto;
 }
-h1 { margin-bottom: 1rem; }
 </style>
