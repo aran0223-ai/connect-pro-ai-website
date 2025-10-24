@@ -5,15 +5,14 @@
       <h1>Refund Policy</h1>
       <p>Last updated: October 24, 2025</p>
 
-      <h2>1. Commission Fee</h2>
-      <p>The 15% commission fee is <strong>non-refundable</strong>.</p>
+      <h2>Commission Fee</h2>
+      <p>The 15% commission fee charged by Connect Pro AI is <strong>non-refundable</strong>.</p>
 
-      <h2>2. Service Quality</h2>
-      <p>Liability for service quality rests solely with the Provider, not the legal entity, <strong>Aran Jallal</strong>.</p>
-
-      <h2>3. Contact</h2>
-      <p>For refund inquiries:<br>
-      Email: liam@connect-pro-ai.net</p>
+      <h2>Contact</h2>
+      <p>
+        Legal Entity: Aran Jallal (Sole Proprietor)<br>
+        Email: liam@connect-pro-ai.net
+      </p>
     </main>
     <SiteFooter />
   </div>

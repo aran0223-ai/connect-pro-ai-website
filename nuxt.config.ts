@@ -2,30 +2,25 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-
-  // Force static site generation to produce a deployable `dist/` folder
-  ssr: false,
-  target: 'static',
-  generate: {
-    fallback: true
-  }
-  ,
-  css: ['~/assets/site.css'],
+  ssr: true,
+  css: ['~/assets/css/main.css'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+  ],
   app: {
     head: {
-      title: 'Connect Pro AI — Autonomous Service Brokerage',
+      title: 'Connect Pro AI',
       meta: [
-        { property: 'og:title', content: 'Connect Pro AI | Autonomous Expert Brokerage' },
-        { property: 'og:description', content: 'The fastest way to connect with pre-qualified service experts.' },
-        { property: 'og:image', content: '/images/Gemini_Generated_Image_s4y4wws4y4wws4y4.png' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Connect Pro AI | Autonomous Expert Brokerage' },
-        { name: 'twitter:description', content: 'The fastest way to connect with pre-qualified service experts.' },
-        { name: 'twitter:image', content: '/images/Gemini_Generated_Image_s4y4wws4y4wws4y4.png' }
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'AI-Powered Business Connections' }
       ],
-      // favicon intentionally removed — site will use browser default or configured host favicon
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
     }
+  },
+  nitro: {
+    preset: 'node-server'
   }
 })

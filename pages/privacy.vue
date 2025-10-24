@@ -8,15 +8,14 @@
       <h2>1. Data Controller</h2>
       <p>The data controller responsible for this service is <strong>Aran Jallal</strong>.</p>
 
-      <h2>2. Payment Processing</h2>
+      <h2>2. Data Processing</h2>
       <p>All payment processing is handled by Paddle as our Merchant of Record (MoR).</p>
 
-      <h2>3. Data Collection</h2>
-      <p>We collect only necessary information required to facilitate business connections and process payments.</p>
-
-      <h2>4. Contact</h2>
-      <p>For privacy inquiries:<br>
-      Email: liam@connect-pro-ai.net</p>
+      <h2>3. Contact</h2>
+      <p>
+        Legal Entity: Aran Jallal (Sole Proprietor)<br>
+        Email: liam@connect-pro-ai.net
+      </p>
     </main>
     <SiteFooter />
   </div>

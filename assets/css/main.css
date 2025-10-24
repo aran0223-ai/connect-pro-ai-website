@@ -1,0 +1,23 @@
+:root {
+  --color-background: #121212;
+  --color-accent: #00FF00;
+  --color-text: #ffffff;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

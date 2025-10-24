@@ -1,25 +1,34 @@
 <template>
   <div class="site-root">
     <SiteHeader />
-    <Hero />
     <main>
-      <section class="pricing-section">
-        <h2 class="accent-text">Transparent Pricing</h2>
+      <section class="hero">
+        <h1>Connect Pro AI</h1>
+        <p>AI-Powered Business Connections</p>
+      </section>
+      <section class="pricing">
+        <h2>Simple Pricing</h2>
         <p class="pricing-highlight">15% Commission</p>
         <p>One-time fee on initial contract value</p>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="legal-links">
-          <NuxtLink to="/terms">Terms of Service</NuxtLink>
-          <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
-          <NuxtLink to="/refund">Refund Policy</NuxtLink>
-        </div>
-        <p class="legal-entity">
-          Operated by Aran Jallal
-        </p>
-      </div>
-    </footer>
+    <SiteFooter />
   </div>
 </template>
+
+<script setup lang="ts">
+import SiteHeader from '../components/SiteHeader.vue'
+import SiteFooter from '../components/SiteFooter.vue'
+</script>
+
+<style scoped>
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  background: var(--color-background);
+}
+.pricing {
+  padding: 2rem 0;
+  text-align: center;
+}
+</style>
