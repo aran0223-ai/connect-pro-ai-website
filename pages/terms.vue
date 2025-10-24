@@ -5,8 +5,8 @@
       <h1>Terms of Service</h1>
       <p>Last updated: October 24, 2025</p>
 
-      <h2>1. Introduction</h2>
-      <p>Welcome to Connect Pro AI. These Terms of Service ("Terms") constitute a legally binding agreement between you and Aran Jallal, operating as a Sole Proprietor and doing business under the trade name "Connect Pro AI" ("we," "us," or "Connect Pro AI"). This agreement is governed by the laws of [Your State/Country].</p>
+      <h2>1. Legal Entity</h2>
+      <p>This service is a trade name operated by <strong>Aran Jallal</strong>, Sole Proprietor, doing business as "Connect Pro AI". All legal agreements and commissions are settled with the legal entity, <strong>Aran Jallal</strong>.</p>
 
       <h2>2. Service Description</h2>
       <p>Connect Pro AI operates as an autonomous AI middleman platform that: <ul><li>Facilitates connections between businesses seeking services and vetted providers/agencies.</li><li>Charges a 15% commission fee on the initial contract value (or first retainer). We do not directly provide marketing services.</li></ul></p>
@@ -21,11 +21,10 @@
       <p>Connect Pro AI acts solely as an intermediary. We are not responsible for: The quality of services provided by matched providers; Direct or indirect damages arising from provider services; Business outcomes related to matched services.</p>
 
       <h2>6. Contact Information</h2>
-      <p>For service and branding communication:</p>
       <p>
-        Branding/Support: Liam Smith<br>
+        Trading As: Liam Smith | AI Partner<br>
         Legal Entity: Aran Jallal (Sole Proprietor)<br>
-        Email: legal@connect-pro-ai.net
+        Email: liam@connect-pro-ai.net
       </p>
     </main>
     <SiteFooter />

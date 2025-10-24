@@ -1,0 +1,36 @@
+:root {
+  --color-background: #121212;
+  --color-accent: #00FF00;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.accent-text {
+  color: var(--color-accent);
+}
+
+.site-header {
+  background-color: rgba(18, 18, 18, 0.95);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.footer {
+  background-color: #0a0a0a;
+  border-top: 1px solid var(--color-accent);
+}
