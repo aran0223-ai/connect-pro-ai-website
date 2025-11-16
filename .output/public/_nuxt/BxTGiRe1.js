@@ -1,0 +1,1 @@
+import{S as o,a as r}from"./D6tbqbsw.js";import{e as a,c as s,o as n,b as e,r as c}from"#entry";import"./CkqXTVJv.js";import"./DlAUqK2U.js";const i={class:"site-root"},u=a({__name:"default",setup(m){return(t,p)=>(n(),s("div",i,[e(o),c(t.$slots,"default"),e(r)]))}});export{u as default};

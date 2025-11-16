@@ -1,11 +1,11 @@
 <template>
-  <div class="site-root">
+  <div class="site-root" style="background:#121212; color:#fff; min-height:100vh;">
     <SiteHeader />
     <main class="container about-content">
-      <h1>About Connect Pro AI</h1>
+      <h1 style="color:#00FF00;">About Connect Pro AI</h1>
       <p>We're an AI-powered platform connecting businesses with verified service providers.</p>
       <div class="team">
-        <h2>Our Team</h2>
+        <h2 style="color:#00FF00;">Our Team</h2>
         <div class="team-member">
           <h3>Liam Smith</h3>
           <p>Brand & Operations</p>
@@ -30,6 +30,9 @@ import SiteFooter from '../components/SiteFooter.vue'
   padding: 40px 0;
   max-width: 800px;
   margin: 0 auto;
+}
+h1, h2 {
+  color: #00FF00;
 }
 .team {
   margin-top: 2rem;

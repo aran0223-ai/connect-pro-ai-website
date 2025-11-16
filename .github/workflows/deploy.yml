@@ -6,20 +6,52 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production
+      NODE_VERSION: '18'
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
       
-      - name: Install
+      - name: Cache build output
+        uses: actions/cache@v3
+        with:
+          path: |
+            .nuxt
+            .output
+          key: ${{ runner.os }}-nuxt-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuxt-
+      
+      - name: Install dependencies
         run: npm ci
-
+      
+      - name: Validate environment
+        run: |
+          node -v
+          npm -v
+          test -n "$CLOUDFLARE_API_TOKEN" || exit 1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      
+      - name: Prepare Nuxt
+        run: npx nuxt prepare
+        continue-on-error: false
+      
       - name: Build
         run: npm run build
+        continue-on-error: false
 
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: npx wrangler pages deploy .output/public --project-name=connect-pro-ai
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx wrangler pages publish .output/public \
+            --project-name=connect-pro-ai \
+            --branch=main

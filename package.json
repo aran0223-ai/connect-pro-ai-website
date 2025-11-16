@@ -7,12 +7,19 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "clean": "rm -rf .nuxt .output node_modules"
   },
   "dependencies": {
-    "vue": "^3.4.15"
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "nuxt": "^3.10.0"
+    "nuxt": "^3.10.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.16",
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.17"
   }
 }

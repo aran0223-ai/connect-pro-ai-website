@@ -1,35 +1,61 @@
-:root {
-  --color-background: #121212;
-  --color-accent: #00FF00;
-  --color-text: #ffffff;
-  --color-text-muted: rgba(255, 255, 255, 0.7);
+/* NVIDIA/RAZER THEME */
+
+/* Global Reset and Background */
+body, html {
+    background-color: #121212 !important;
+    color: #FFFFFF;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+/* Headings and Links */
+h1, h2, h3, h4 {
+    color: #FFFFFF;
+    font-weight: 800;
+    letter-spacing: -0.04em;
 }
 
+/* The Razer/NVIDIA Electric Green Accent */
+a, .text-accent {
+    color: #00FF00;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #00A300;
+}
+
+/* Primary Button Styling (The Call to Action) */
 .btn-primary {
-  background-color: var(--color-accent);
-  color: var(--color-background);
-  border: none;
-  transition: opacity 0.2s;
+    background-color: #00FF00;
+    color: #121212;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.4);
+    transition: all 0.3s;
+    border: none;
 }
-
 .btn-primary:hover {
-  opacity: 0.9;
+    background-color: #00A300;
+    box-shadow: 0 4px 25px rgba(0, 255, 0, 0.8);
 }
 
-.accent-text {
-  color: var(--color-accent);
+/* Compliance and Layout Container */
+.compliance-container {
+    background-color: #1A1A1A;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 8px;
+    line-height: 1.6;
 }
-
-.site-header, .site-footer {
-  background-color: rgba(18, 18, 18, 0.95);
-  border-color: var(--color-accent);
-}
-
-.legal-links a {
-  color: var(--color-accent);
+.compliance-container h2 {
+    color: #00FF00;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+    padding-bottom: 10px;
+    margin-top: 30px;
 }
